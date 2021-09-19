@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActividadSubneteo</title>
+    <script src="JS/calculos.js" ></script>
+    <script src="JS/rellenox.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/colores.css">
+</head>
+<body>
+    <div class="div_inicio">
+        <div class="cont_perfil">
+            <h1 align="center">Actividad de Subneteo</h1>
+            
+                <label class="enun">Ingrese su IP</label>
+
+                <br><br>
+                    
+                <input type="input_text" class="cuad" id="ip" name="ip" >
+
+                <br><br>
+                    
+                <label class="enun">Ingrese el número de subredes</label>
+
+                <br><br>
+                    
+                <input type="input_text" class="cuad" id="subred">
+                   
+                <input type="button" class="cuad" value="Calcular" onclick="sub()" >
+                    
+        </div>
+        <br>
+        <div class="cont_perfil">
+           
+            <h3>Su IP en binario es:</h3>
+                   
+            <input type="text" class="cuad" id="ipbin" readonly>
+               
+            <h3>El tipo de clase es:</h3>  
+                    
+            <input type="text" class="cuad" id="clase" readonly>
+                    
+            <h3>La máscara de subred adaptada es:</h3>
+                    
+            <input type="text" class="cuad" id="maskadap" readonly>
+                   
+            <h3>La máscara de subred en binario es:</h3>
+                    
+            <input type="text" class="cuad" id="maskbin" readonly>
+                    
+            <h3>Su tabla quedaría así:</h3>
+        </div>
+        <br>
+        <div>
+            <table id="tabla1" class="table">           
+            </table>
+        </div>
+    </div>  
+    <br>
+    <br>
+    <br>
+</body>
+</html>
